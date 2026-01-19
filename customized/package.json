@@ -1,0 +1,21 @@
+{
+  "name": "customized",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js features --require steps/**/*.ts --config=config/cucumber.cjs ",
+    "test:api": "npx playwright test tests/api"
+  },
+  
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.2.0",
+    "@playwright/test": "^1.57.0",
+    "@types/cucumber-html-reporter": "^5.0.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0"
+  }
+}
